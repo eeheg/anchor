@@ -1,0 +1,11 @@
+span {
+    margin: 20px;
+    display: inline-block;
+    color:white;
+    background-color: gray;
+    width:300px;
+    height:60px;
+    text-align: center;
+    text-shadow: 3px -2px 5px black;
+    line-height: 60px;
+}

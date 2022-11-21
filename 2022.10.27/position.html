@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 요소의 위치</title>
+</head>
+<body>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            padding-top:10px;
+        }
+        .static {
+            position: static;
+            background-color: pink;
+        }
+        .relative {
+            position: relative;
+            background-color: yellowgreen;
+            top: 20px;
+            left: 60px;
+            z-index: 1;
+        }
+        .absolute {
+            position: absolute;
+            background-color: aqua;
+            top: 100px;
+            left: 100px;
+        }
+        .parents1 {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-color: aliceblue;
+        }
+        span {
+            font-size: smaller;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: rgb(183, 135, 228);
+        }
+        .line {
+            width: 500px;
+        }
+        .sticky {
+            position: sticky;
+            top: 0; left: 0;
+            background-color: rgb(58, 245, 58);
+        }
+        .a1 {
+            background-color: red;
+            top: 50px; left: 550px;
+            z-index: 0;
+        }
+        .a2 {
+            background-color: green;
+            top: 90px; left: 580px;
+            z-index: 1;
+        }
+        .a3 {
+            background-color: rgb(45, 166, 214);
+            top: 130px; left:610px;
+            z-index: 2;
+        }
+    </style>
+    <div class="static"><b>static:</b><br><span>기본값이며<br>고정되어<br>움직일 수 없음</span></div>
+
+    <div class="relative"><b>relative:</b><br><span>생성된 위치를<br>기준으로 움직임,<br>위치를 차지하고 있음<br>(<b>z-index: 1;</b><br>겹침을 상단으로 수정)</span></div>
+
+    <div class="parents1">
+        <div class="absolute"><b>absolute:</b><br><span>마진값X,<br>자리를 차지하지 않음,<br>부모기준으로 움직임<br>(부모요소에<br>position값을 지정)</span></div>
+        <div class="absolute a1"><b>z-index: 0;</b></div>
+        <div class="absolute a2"><b>z-index: 1;</b></div>
+        <div class="absolute a3"><b>z-index: 2;</b><br><br><span>z-index 미설정시<br>겹침 기본값:<br>아래에 있는 요소가<br>위로 감</span></div>
+    </div>
+
+    <div class="fixed"><b>fixed:</b><br><span>뷰포트 기준으로 이동,<br>화면에 고정</span></div>
+    <div class="static"><b>static</b></div>
+    <div class="sticky"><b>sticky:</b><br><span>화면의 상단이<br>요소의 상단에 걸리면<br>fixed됨<br>(top값을 지정해야<br>움직임)</span></div>
+    <div class="static"><b>static</b></div>
+    <div class="static"><b>static</b></div><div class="static"><b>static</b></div>
+    <div class="static"><b>static</b></div><div class="static"><b>static</b></div>
+    <div class="static"><b>static</b></div><div class="static"><b>static</b></div>
+    <div class="static"><b>static</b></div><div class="static"><b>static</b></div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* +: 형제 중 바로 아래 동생을 선택 */
+h3 + p {
+    margin: 0 auto;
+    width: 75%; /*가변형*/
+}
+p:nth-of-type(2) {
+    text-align: center;
+}
+div[class^=mar] {
+    height: 50px;
+    border: 1px solid red;
+}
+div.mar10 {
+    margin: 10px;
+}
+div.mar5 {
+    margin: 5px;
+}

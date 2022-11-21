@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 삽입하기</title>
+</head>
+<body>
+    <h3>폼 삽입하기</h3>
+    <p>사용자에게 정보를 입력받아 데이터를 전송</p>
+    <form method="GET" name="myForm" action="http://www.naver.com?userName=사용자이름" target="_self">
+        <input type="text" name="userName">
+        <input type="submit">
+    </form>
+    <br><br><hr style="border: 2px solid black;"><br><br>
+    <form method="GET" name="myForm" action="formresult.html" target="_self" autocomplete="on">
+        <fieldset>
+            <legend>로그인</legend>
+            <label for="userName">이름
+            <input type="text" name="userName" placeholder="이름을 입력하세요." id="userName"></label>
+            &nbsp; <label for="userAge">나이
+            <input type="number" name="userAge" placeholder="나이를 입력하세요." id="userAge"></label>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br><br><hr style="border: 2px solid black;"><br><br>
+    <form action="http://www.bing.com/search" method="GET" target="search">
+        <fieldset>
+            <legend>인터넷검색</legend>
+            <label>검색어
+            <input type="text" name="q"></label>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <iframe name="search" width="100%" height="500"></iframe>
+</body>
+</html>

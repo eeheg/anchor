@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/anchor/2022.11.03/color.css">
+</head>
+<body>
+    <ul>
+        <a href="#" onclick="changeBg('green')"><li>green</li></a>
+        <a href="#" onclick="changeBg('Orange')"><li>Orange</li></a>
+        <a href="#" onclick="changeBg('purple')"><li>Purple</li></a>
+    </ul>
+    <div id="result"></div>
+    <script>
+        function changeBg(color) {
+            console.log(color);
+            var result = document.querySelector ("#result");
+            result.style.backgroundColor = color;
+}
+    </script>
+</body>
+</html>

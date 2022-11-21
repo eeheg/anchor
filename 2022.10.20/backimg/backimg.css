@@ -1,0 +1,21 @@
+html,body{
+    overflow: hidden;
+    height:100%;
+    background-image: url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F1c%2Fdd%2F6b%2F1cdd6b9cc0cbb2b558f1fc36df420b2e.jpg&type=sc960_832);
+    background-repeat: round;
+}
+p {
+    text-align: center;
+    height:100%;
+    position: relative;
+    margin:0;
+}
+p1{
+    position:absolute;
+    top:50%;left:50%;
+    transform:translate(-50%,-50%);
+    color:blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:500px;
+}
+

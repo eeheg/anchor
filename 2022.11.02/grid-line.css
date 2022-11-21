@@ -1,0 +1,27 @@
+.container {
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100px);
+}
+.items1 { 
+    background-color: blue;
+    grid-column: 1/4;
+}
+.items2 { 
+    background-color: pink;
+    grid-row: 2/4;
+
+}
+.items3 { 
+    background-color: green;
+    grid-column: 2/4;
+}
+.items4 { 
+    background-color: red;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+.items5 { 
+    background-color: violet;
+}

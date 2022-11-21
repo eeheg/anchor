@@ -1,0 +1,46 @@
+#tiger{
+    width:40%;
+    height:40%
+}
+.title{
+    text-align: center;
+}
+blockquote{
+    text-align: center;
+}
+#wrap{
+    width:960px;
+    margin:0 auto;
+}
+#wrap>header {
+    display:flex;
+    background-color: black;
+    color:white;
+    padding: 15px 0px;
+}
+#wrap>header>#logo {
+    font-size: 35px;
+    font-weight: bold;
+    padding-left:15px;
+}
+#wrap>header>nav {
+    flex:1;
+}
+#wrap>header>nav>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#wrap>header>nav>ul>li{
+    text-align: center;
+}
+#wrap>footer{
+    background-color:red;
+    color:white;
+    padding:15px 0px;
+}
+#wrap>footer>ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+}

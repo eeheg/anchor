@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <html lang="ko">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>메뉴바</title>
+      <style>
+        .menu-bar {
+          border: 1px solid;
+          padding: 15px;
+        }
+        .menu-bar::after {
+          clear: both;
+          display: table;
+          content: "";
+        }
+        .menu-bar > div {
+          float: left;
+        }
+        .menu-bar > div:first-child {
+          margin-right: 35px;
+        }
+        .menu-bar > div > ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+        }
+        .menu-bar > div > ul::after {
+          clear: both;
+          display: table;
+          content: "";
+        }
+        .menu-bar > div > ul > li {
+          float: left;
+          margin-right: 25px;
+        }
+        .menu-bar a[href] {
+          background-color: yellow;
+          color: black;
+          border: 1px solid red;
+          display: block;
+          padding: 5px 15px;
+          text-decoration: none;
+        }
+        .menu-bar a[target=_blank] {
+          background-color: aqua;
+        }
+        .menu-bar li:last-child {
+          margin-right: 0;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="menu-bar">
+        <div>메인 메뉴 : </div>
+        <div>
+          <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#" target="_blank">메뉴 2</a></li>
+            <li><a href="#">메뉴 3</a></li>
+            <li><a href="#">메뉴 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </body>
+</html>

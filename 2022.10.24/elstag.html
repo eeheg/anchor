@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form>
+    <textarea cols="50" rows="2" placeholder="배송요청사항"></textarea>
+    <hr>
+    <label for="item">상품선택</label>
+    <select id="item">
+        <optgroup label="선물용">
+            <option selected value="p3">선물용 3kg</option>
+            <option value="p5">선물용 5kg</option>
+        </optgroup>
+        <optgroup label="가정용">
+            <option value="h3">가정용 3kg</option>
+            <option value="h5">가정용 5kg</option>
+        </optgroup>
+    </select>
+    <hr>
+    <input type="text" list="myList" placeholder="직접입력 및 선택">
+    <datalist id="myList">
+        <option>선물 포장</option>
+        <option>포장 안 함</option>
+    </datalist>
+    <hr>
+    <input type="button" value="전송">
+    <button><img src="/anchor/2022.10.18/a.jpg" alt="호랑이" width="150px"></button>
+ </form>
+</body>
+</html>

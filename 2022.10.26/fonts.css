@@ -1,0 +1,21 @@
+.vw {
+    font-size: 10vw; /*viewport 넓이의 10%*/ 
+  }
+  .vh {
+    font-size: 10vh; 
+    /*viewport 높이의 10%*/ 
+  }
+  .wave {
+    text-decoration-style: wavy;
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+  }
+  ul {
+    list-style: none;
+  }
+  ul li {
+    border: 1px solid black;
+    padding: 15px 32px;
+    margin-bottom: 5px;
+  }

@@ -1,0 +1,144 @@
+* {
+    margin:0 auto;
+    padding: 0;
+    list-style: none;
+}
+.wrap {
+    width: 1500px;
+    background-color: rgb(215, 252, 255);
+}
+.header {
+    height: 250px;
+    margin-bottom: 50px;
+}
+.header-top {
+    background-color: pink;
+    height: 30px;
+    display: flex;
+}
+.header-top-left {
+    float: left;
+    width: 300px;
+    margin-left: 0;
+    margin-right: 350px;
+    background-color: palevioletred;
+}
+.header-top > p {
+    float: right;
+    margin-left: 0px;
+    margin-right: 50px;
+    background-color: palevioletred;
+}
+.header-top-right {
+    float: right;
+    width:500px;
+    margin: 0;
+    background-color: palevioletred;
+}
+.header-top-right {
+    display: flex;
+}
+.mar-both30 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.header-search {
+    height: 30px;
+    background-color: bisque;
+}
+.header-search > input {
+    float: right;
+}
+.header-middle {
+    background-color: pink;
+    height: 105px;
+}
+.header-middle-left {
+    float: left;
+    width: 300px;
+    height: 100%;
+    background-color: palevioletred
+}
+.header-middle-right {
+    float: right;
+    width: 500px;
+    height: 100%;
+    background-color: palevioletred
+}
+.header-middle-right > ul {
+    display: flex;
+}
+.header-bottom {
+    background-color: pink;
+    height: 85px;
+}
+.header-bottom > p {
+    font-size: x-small;
+    background-color: antiquewhite;
+}
+.main{
+    height: 1200px;
+}
+.main > .aside {
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: pink;
+    line-height: 25px;
+}
+.aside > ul > li > p {
+    background-color: palevioletred;
+}
+.aside > ul > li > ul >li {
+    font-size: small;
+    padding-left: 5px;
+}
+.main > .contents {
+    position: relative;
+    float: right;
+    width: 1150px;
+    height: 100%;
+    background-color: pink;
+}
+.contents > ul {
+    width: 990px;
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* .contents > ul::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+.contents > ul > li {
+    background-color: palevioletred;
+    width:300px;
+    height: 350px;
+    float: left;
+    margin: 15px;
+}
+
+.footer {
+    clear: both;
+    background-color: yellowgreen;
+    height: 200px;
+}
+.footer-logo {
+    float: left;
+    width: 300px;
+    height: 100%;
+    background-color: green;
+}
+.footer-category {
+    display: flex;
+}
+
+.footer-category > li > p{
+    font-weight: bolder;
+    line-height: 55px;
+}
+.footer-category > li > ul > li {
+    line-height: 20px;
+    font-size: small;
+}

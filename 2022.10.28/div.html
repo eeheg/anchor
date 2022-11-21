@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습하기</title>
+    <link rel="stylesheet" href="/anchor/2022.10.28/div.css">
+    <style>
+        .wrap {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header total-width one-height bg-color border-radius5 mar-bottom"></div>
+        <div class="main clearfix">
+            <div class="main-left float mar-right">
+                <div class="bg-color one-height one-width border-radius5 mar-bottom"></div>
+                <div class="bg-color one-height one-width border-radius5 mar-bottom"></div>
+                <div class="bg-color two-height one-width border-radius5 mar-bottom"></div>
+            </div>
+            <div class="main-right float">
+                <div class="main-right-top mar-bottom clearfix">
+                    <div class="main-right-top-left float mar-right">
+                        <div class="main-right-top-left-1 one-height one-width bg-color border-radius5 mar-bottom"></div>
+                        <div class="main-right-top-left-2 one-height one-width bg-color border-radius5 mar-bottom"></div>
+                        <div class="main-right-top-left-3 one-height one-width bg-color border-radius5"></div>
+                    </div>
+                    <div class="main-right-top-middle float mar-right">
+                        <div class="main-right-top-middle-1 two-height one-width bg-color border-radius5 mar-bottom"></div>
+                        <div class="main-right-top-middle-2 one-height one-width bg-color border-radius5"></div>
+                    </div>
+                    <div class="main-right-top-right float">
+                        <div class="main-right-top-right-1 one-height one-width bg-color border-radius5 mar-bottom"></div>
+                        <div class="main-right-top-right-2 two-height one-width bg-color border-radius5"></div>
+                    </div>
+                </div>
+                <div class="main-right-bottom bg-color one-height three-width border-radius5"></div>
+            </div>
+        </div>
+        <div class="footer total-width one-height bg-color border-radius5"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+</head>
+<body>
+    <h3>버튼</h3>
+    <form action="#" method="GET" id="orderfrm">
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li><label>이름 <input type="text" name="user-name"></label></li>
+                <li><label>배송 주소 <input type="text"></label></li>
+                <li><label>이메일 <input type="email"></label></li>
+                <li><label>연락처 <input type="tel"></label></li>
+                <li><label>배송 지정 <input type="date"> (주문일로부터 최소 3일 후)</label></li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+        <input type="image" src="/anchor/2022.10.18/a.jpg" alt="주문하기" width="10%" height="10%">
+        <input type="button" value="주문하기" onclick="orderfrm. submit();">
+        <input type="button" value="새 창" onclick="window.open('http://www.naver.com');">
+        <input type="button" value="다음" onclick="window.open('number,range.html','mywin', 'width=500,height=350,top=50,left=50');">
+    </form>
+</body>
+</html>

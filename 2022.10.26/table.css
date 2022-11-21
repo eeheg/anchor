@@ -1,0 +1,30 @@
+/* 모든 후손 */
+table {
+    caption-side: bottom;
+    border: 1px solid black;
+    border-spacing: 10px;
+    border-collapse: collapse;
+}
+table caption {}
+table thead {}
+table tbody {}
+table tr {}
+table th {
+    border-bottom: 2px solid red;
+}
+table td {}
+table th, table td {
+    border: 1px dotted black;
+    padding: 10px;
+    text-align:center;
+}
+
+/* 직계 자식 */
+table {}
+table > caption {}
+table > thead {}
+table > thead > tr {}
+table > thead > tr > th {}
+table > tbody {}
+table > tbody > tr {}
+table > tbody > tr > td {}

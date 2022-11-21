@@ -1,0 +1,41 @@
+.total-width {
+    width: 960px;
+}
+.float {
+    float: left;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.bg-color {
+    background-color: thistle;
+}
+.one-width {
+    width: 238.5px;  /* (960px-마진2px*3)/4 */
+}
+.two-width {
+    width: 479px;  /* 238.5px*2+마진2px */
+}
+.three-width {
+    width: 719.5px;  /* 238.5px*3+마진2px*2 */
+}
+.mar-bottom {
+    margin-bottom: 2px;
+}
+.mar-right {
+    margin-right: 2px;
+}
+.border-radius5 {
+    border-radius: 5px;
+}
+.one-height {
+    height: 100px;
+}
+.two-height {
+    height: 202px;  /* 100px*2+마진2px */
+}
+.three-height {
+    height: 304px;  /* 100px*3+마진2*2px */
+}
